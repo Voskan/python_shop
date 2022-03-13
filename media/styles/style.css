@@ -1,0 +1,284 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.product {
+    border: 1px solid #e0e0e0;
+    margin: 10px;
+    background: #ffffff;
+    padding: 20px 15px;
+    width: 203px;
+    float: left;
+    text-align: center;
+}
+
+.product img {
+    display: block;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product h2 {
+    font-size: 18px;
+}
+
+.product button {
+    width: 90%;
+    border: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background: crimson;
+    color: #fff;
+}
+
+.product button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.menu-area {
+    background-color: #e20000;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-area ul li {
+    float: left;
+}
+
+.menu-area ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-area ul li a:hover {
+    background-color: #d75959;
+}
+
+.top-menu {
+    float: left;
+}
+.search {
+    float: right;
+}
+
+.search input {
+    padding: 5px;
+    margin-top: 6px;
+    width: 200px;
+    border: none;
+}
+.search button {
+    padding: 5px 10px;
+    margin-top: 6px;
+    border: none;
+    background-color: #ffdeb9;
+    color: #e20000;
+    margin-right: 25px;
+}
+
+.search button:hover{
+    cursor: pointer;
+    background-color: #cd812f;
+    color: #ffffff;
+}
+
+.main-content {
+    margin: 80px auto 10px auto;
+    width: 1000px;
+}
+.header-h1 {
+    text-align: center;
+}
+
+.product_info {
+    padding: 12px 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.price {
+    float: left;
+}
+.price span {
+    color: #e20000;
+    font-weight: bold;
+}
+.product_in {
+    float: right;
+}
+
+.category {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
+
+.left_sidebar {
+    width: 220px;
+    float: left;
+}
+
+.right_content {
+    width: 770px;
+    float: right;
+}
+
+.cat_menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.cat_menu a {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #910000;
+    background: #e20000;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cat_menu a:hover {
+    background: #910000
+}
+
+.product-name a {
+    text-decoration: none;
+    color: #e20000;
+}
+
+.product-name a:hover {
+    color: #910000
+}
+
+.product_left_bar {
+    float: left;
+    width: 400px;
+}
+
+.product_left_bar img {
+    width: 100%;
+}
+
+.product_right_bar {
+    float: right;
+    width: 500px;
+}
+
+.product_content {
+    margin: 20px 0;
+    background: #fff;
+}
+.product_content p {
+    padding: 10px;
+}
+.product_content h3,
+ .other_products h3{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    background: #910000;
+    padding: 6px;
+    margin: 0;
+}
+
+.product_name {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+.p_info {
+    padding: 10px;
+    background: #fff;
+    border-radius: 2px;
+    margin: 15px 0;
+}
+
+.p_info div {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.p_info div:last-child {
+    border: none;
+    padding: 10px 0 0 0;
+}
+
+.p_info div span {
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+
+.p_info a {
+    text-decoration: none;
+    color: #e20000;
+}
+
+.p_info a:hover {
+    color: #910000
+}
+
+.p_price_left {
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: #e20000;
+    width: 48%;
+    padding-left: 5px;
+}
+
+.p_price{
+    margin-top: 20px;
+}
+.p_price_right {
+    float: right;
+    width: 50%;
+}
+.p_price_right button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #e20000;
+    color: #fff;
+    padding: 8px 10px;
+    font-weight: bold;
+}
+.p_price_right button:hover {
+    cursor: pointer;
+    background: #910000;
+}
+
+.other_products {
+    margin: 10px 0 50px 0;
+}
+.other_products .product {
+    margin: 6px;
+}
+.other_products h3 {
+    display: block;
+    width: 210px;
+    margin: 25px 0 10px 0;
+}

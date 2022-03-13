@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/media/styles/style.css">
+</head>
+<body>
+    <menu class="menu-area">
+        <ul class="top-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+
+        <div class="search">
+            <form method="get" action="/">
+                <input placeholder="Search..." type="text" name="product" class="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+
+        <div class="clearfix"></div>
+    </menu>
+
+    <div class="main-content">
+        <div class="product_left_bar">
+            <img src="/media/{{product.image}}" alt="image">
+        </div>
+
+        <div class="product_right_bar">
+            <h1 class="product_name">{{product.name}}</h1>
+
+            <div class="p_info">
+                <div>Կոդ: <span>{{product.code}}</span></div>
+                <div>Քանակը: <span>{{product.count}}</span></div>
+                <div>Արտադրման երկիրը: <span>{{product.product_in}}</span></div>
+                <div>
+                    Բաժինը:
+                    <span>
+                        <a href="/category/{{product.category.pk}}">
+                            {{product.category.name}}
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="p_price">
+                <div class="p_price_left">
+                    ${{product.price}}
+                </div>
+                <div class="p_price_right">
+                    <button type="button">Գնել</button>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="product_content">
+            <h3>Ապրանքի նկարագրությունը</h3>
+            <p>{{product.description}}</p>
+        </div>
+
+
+        <div class="other_products">
+            <h3>Նմանատիպ ապրանքներ</h3>
+
+            {% for p in products %}
+                <div class="product">
+                    <h2 class="product-name">
+                        <a href="/product/{{p.pk}}">{{p.name}}</a>
+                    </h2>
+                    <img src="/media/{{p.image}}" alt="image">
+
+                    <div class="product_info">
+                        <span class="price">Price: <span>${{p.price}}</span></span>
+                        <span class="product_in">{{p.product_in}}</span>
+
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class="product_info">
+                        <span class="category">Category: {{p.category.name}}</span>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <button type="button">Գնել</button>
+                </div>
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>
